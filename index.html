@@ -7,9 +7,32 @@
   <title>To Do List</title>
 </head>
 <body>
-
-
-
+  <!-- definiere sidebar links -->
+<div id="asidediv">
+  <aside class="side" id="aside">
+    <h1>Get it Done</h1>
+    <!-- to be defined -->
+    <ul><li></li></ul>
+  </aside>
+</div>
+<!-- primäres div für mitte/listenbereich -->
+<div class="main" id="main">
+  <h2 class="listname" id="listname">Meine ToDos</h2>
+  <!-- bereich für die eingabe -->
+    <div class="input" id="input">
+      <input type="text" id="newlistitem"><button id="addlistitem"></button><button id="setprio"></button>
+    </div>
+    <!-- bereich für die anzeige von listen items -->
+    <div class="list" id="list">
+      <ul class="todolist" id="todolist">
+        <li class="todoitem" id="todoitem"></li>
+      </ul>
+    </div>
+  </div>
+  <!-- bereich für den footer -->
+  <footer class="footer" id="footer">
+    <p class="footertxt" id="footertxt"></p>
+  </footer>
   <script src="main.js"></script>
 </body>
 </html>
