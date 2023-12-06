@@ -22,12 +22,19 @@
   <h2 class="listname" id="listname">Meine ToDos</h2>
   <!-- bereich für die eingabe -->
     <div class="input" id="input">
-      <input type="text" id="newitemtxt"><button id="addlistitembtn"></button><button id="setpriobtn"></button>
+      <input type="text" id="newitemtxt"><button id="addlistitembtn" ><img src="/icons/plus-solid.svg" alt=""></button><button id="setpriobtn"></button>
     </div>
     <!-- bereich für die anzeige von listen items -->
     <div class="list" id="list">
       <ul class="todolist" id="todolist">
-        <li class="todoitem" id="todoitem"></li>
+        <li class="todoitem" id="todoitem">
+          <div class="midli" id="midli">
+            <p class="litx" id="litxt">This is a ToDO and it has a Text</p>
+            <button class="editbtn" id="editbtn"><img src="/icons/pen-to-square-regular.svg" alt=""></button>
+            <button class="delbtn" id="delbtn"><img src="/icons/trash-solid.svg" alt=""></button>
+          </div><div class="doneli" id="doneli">            
+          </div>
+        </li>
       </ul>
     </div>
   </div>
