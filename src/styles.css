@@ -27,8 +27,10 @@ body{
 .main{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     border-bottom: 1px solid #383852;
+    margin-left: 5%;
+    margin-right: 20%;
     min-height: 100vh;
 }
 .footer{
@@ -48,7 +50,7 @@ body{
         align-self: center;
         justify-content: end;
         margin-top: 2em;
-        min-height: 2em;
+        min-height: 2.5em;
         min-width: 40%;
         border: 1px solid #383852;
         border-top-left-radius: 1em;
@@ -56,7 +58,6 @@ body{
         background-color: #212134;
         box-shadow: 0px 3px 6px #FFFFFF16;
         & #newitemtxt{
-            /* min-width: 50%; */
             margin-left: 1em;
             min-height: 80%;
             color: white;
@@ -78,53 +79,68 @@ body{
     }
 }
 
+#list{
+    min-width: 80%;
+    & #todolist{
+        min-width: 80%;
+    }
+}
 #todoitem{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     background-color: #252F65;
     border: 1px solid #383852;
     box-shadow: 0px 3px 6px #FFFFFF16;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
-    min-height: 2em;
-    min-width: 40%;
+    min-height: 2.5em;
     margin-top: 3em;
+    padding-left: 2.5em;
     & #midli{
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         background-color: #212134;
-        margin-left: 2em;
+        min-width: 100%;
         & #litxt{
-            padding: 1px;
-            margin-left: 1em;
-            margin-right: 2em;
-        }
-        & #editbtn{
+                padding: 1px;
+                margin-left: 1em;
+                margin-right: 2em;
+            }
+        & #libuttons{
+            display: flex;
+            min-height: 100%;
+            & #editbtn{
             background-color: transparent;
             border: none;
             cursor: pointer;
-            & img{
+                & img{
                 min-height: 20px;
                 padding: 1px;
+                }
             }
-        }
-        & #delbtn{
+            & #delbtn{
             background-color: transparent;
             border: none;
             cursor: pointer;
-            & img{
-                min-height: 20px;
-                padding: 1px;
+            padding-right: 1em;
+                & img{
+                    min-height: 20px;
+                    padding: 1px;
+                }
             }
+            & #donebtn{
+            background-color: #4A4A6A;
+            font-size: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            color: #66B7F1;
+            min-height: 100%;
+            border: none;
+            cursor: pointer;
+        }
         }
     }
 }
-/* <li class="todoitem" id="todoitem">
-<div class="midli" id="midli">
-  <p class="litx" id="litxt">This is a ToDO and it has a Text</p>
-  <button class="editbtn" id="editbtn"><img src="/icons/pen-to-square-regular.svg" alt=""></button>
-  <button class="delbtn" id="delbtn"><img src="/icons/trash-solid.svg" alt=""></button>
-</div><div class="doneli" id="doneli">            
-</div>
-</li> */
