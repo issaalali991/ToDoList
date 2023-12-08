@@ -1,13 +1,5 @@
 /* definition des grids */
 .grid-container {
-    /* display: grid;
-    grid-template-columns: 20% 80%;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    & .aside { 
-        grid-area: 1 / 1 / 2 / 2; }
-    & .main { 
-        grid-area: 1 / 2 / 2 / 3; } */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -30,7 +22,7 @@ body{
 .main{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     border-bottom: 1px solid #383852;
     min-height: 100vh;
     min-width: 75%;
@@ -78,7 +70,6 @@ body{
         margin-left: 1em;
         font-size: 1.5em;
         text-decoration: underline 1px solid #66B7F1;
-        align-self: flex-start;
     }
     & #input{
         display: flex;
@@ -93,6 +84,7 @@ body{
         background-color: #212134;
         box-shadow: 0px 3px 6px #FFFFFF16;
         & #newitemtxt{
+            outline: none;
             margin-left: 1em;
             min-height: 80%;
             color: white;
