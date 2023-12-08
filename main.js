@@ -19,11 +19,11 @@ addlistitembtn.addEventListener('click', () => {
   Array.from(addev).forEach((el) => {el.addEventListener('click', function (ev2){
     let parent= ev2.target.parentElement.parentElement.parentElement.parentElement;
     parent.remove();
-//EX added to update LC status to Delbtn
+//EX added to update LS status to Delbtn
     save();
     })
   });
-//EX to update LC live
+//EX to update LS live
   save();
 });
   
@@ -53,10 +53,10 @@ function loadList(){
   Array.from(addev).forEach((el) => {el.addEventListener('click', function (ev2){
     let parent= ev2.target.parentElement.parentElement.parentElement.parentElement;
     parent.remove();
-//EX added to update LC status to Delbtn
+//EX added to update LS status to Delbtn
     save();
     })
-//EX to update LC live
+//EX to update LS live
     save();
   });
       
