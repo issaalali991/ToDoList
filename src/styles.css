@@ -123,6 +123,7 @@ body{
         margin-left: 5%;
     }
 }
+span{color: green; font-size: 1.2rem;}
 #todoitem{
     display: flex;
     flex-direction: row;

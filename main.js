@@ -15,6 +15,32 @@ addlistitembtn.addEventListener('click', () => {
   } else {
     alert('no Item');
   }
+
+  const eddev = document.getElementsByClassName('editbtn');
+Array.from(eddev).forEach((el) => {el.addEventListener('click', function (ev2){
+  let parent= ev2.target.parentElement.parentElement.parentElement.firstChild;
+  if(ev2.target.parentElement.innerHTML!="<span>save</span>"){
+ 
+ parent.innerText=""
+ ev2.target.parentElement.innerHTML="<span>save</span>";
+ input.focus()}
+    else{
+      const newTxt=input.value;
+      parent.innerText=newTxt;
+      ev2.target.parentElement.innerHTML="<img src='icons/pen-to-square-regular.svg' alt=''>"
+      input.value=""
+      save()
+    }
+ 
+ 
+
+//EX added to update LC status to Delbtn
+  
+  })
+});
+
+
+
   const addev = document.getElementsByClassName('delbtn');
   Array.from(addev).forEach((el) => {el.addEventListener('click', function (ev2){
     let parent= ev2.target.parentElement.parentElement.parentElement.parentElement;
@@ -25,7 +51,17 @@ addlistitembtn.addEventListener('click', () => {
   });
 //EX to update LC live
   save();
-});
+
+
+
+}
+
+
+
+
+
+);
+
   
 // function save
 function save(){
@@ -60,6 +96,28 @@ function loadList(){
     save();
   });
       
+  const eddev = document.getElementsByClassName('editbtn');
+Array.from(eddev).forEach((el) => {el.addEventListener('click', function (ev2){
+  let parent= ev2.target.parentElement.parentElement.parentElement.firstChild;
+  if(ev2.target.parentElement.innerHTML!="<span>save</span>"){
+ 
+ parent.innerText=""
+ ev2.target.parentElement.innerHTML="<span>save</span>";
+ input.focus()}
+    else{
+      const newTxt=input.value;
+      parent.innerText=newTxt;
+      ev2.target.parentElement.innerHTML="<img src='icons/pen-to-square-regular.svg' alt=''>"
+      input.value=""
+      save()
+    }
+ 
+ 
+
+//EX added to update LC status to Delbtn
+  
+  })
+});
      
 
 }
