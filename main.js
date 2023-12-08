@@ -19,11 +19,11 @@ addlistitembtn.addEventListener('click', () => {
   Array.from(addev).forEach((el) => {el.addEventListener('click', function (ev2){
     let parent= ev2.target.parentElement.parentElement.parentElement.parentElement;
     parent.remove();
-//EX added to update LC status to Delbtn
+//EX added to update LS status in Delbtn
     save();
     })
   });
-//EX to update LC live
+//EX to update LS live
   save();
 });
   
@@ -48,15 +48,15 @@ function save(){
 function loadList(){
   const items=JSON.parse(localStorage.getItem('Tasks List'));
     items.forEach((item) => todolist.innerHTML +=  htmldata1+item+htmldata2);
-//Ex add Event to Delbtn
+//Ex add Event in Delbtn
     const addev = document.getElementsByClassName('delbtn');
   Array.from(addev).forEach((el) => {el.addEventListener('click', function (ev2){
     let parent= ev2.target.parentElement.parentElement.parentElement.parentElement;
     parent.remove();
-//EX added to update LC status to Delbtn
+//EX added to update LS status in Delbtn
     save();
     })
-//EX to update LC live
+//EX to update LS live
     save();
   });
       
