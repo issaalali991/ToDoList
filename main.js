@@ -20,6 +20,29 @@ addlistitembtn.addEventListener('click', () => {
   const addev2 = document.getElementsByClassName('delbtn');
   const addev1 = document.getElementsByClassName('donebtn');
   //add event in Delbtn to remove item 
+
+  const eddev = document.getElementsByClassName('editbtn');
+  Array.from(eddev).forEach((el) => {el.addEventListener('click', function (ev2){
+    let parent= ev2.target.parentElement.parentElement.parentElement.firstChild;
+    if(ev2.target.parentElement.innerHTML!="<span>save</span>"){
+   
+   parent.innerText=""
+   ev2.target.parentElement.innerHTML="<span>save</span>";
+   input.focus()}
+      else{
+        const newTxt=input.value;
+        parent.innerText=newTxt;
+        ev2.target.parentElement.innerHTML="<img src='icons/pen-to-square-regular.svg' alt=''>"
+        input.value=""
+        save()
+      }
+   
+   
+  
+  //EX added to update LC status to Delbtn
+    
+    })
+  });
   Array.from(addev2).forEach((el) => {el.addEventListener('click', function (ev2){
     let parent= ev2.target.parentElement.parentElement.parentElement.parentElement;
     parent.remove();
@@ -35,6 +58,9 @@ addlistitembtn.addEventListener('click', () => {
     savedone();
     })
   });
+  
+
+  
 //EX to update LS live
 
   save();
@@ -81,6 +107,32 @@ function loadList(){
     items.forEach((item) => todolist.innerHTML +=  htmldata1+item+htmldata2);
 //Ex add Event in Delbtn
   const addev3 = document.getElementsByClassName('delbtn');
+
+
+  const eddev = document.getElementsByClassName('editbtn');
+  Array.from(eddev).forEach((el) => {el.addEventListener('click', function (ev2){
+    let parent= ev2.target.parentElement.parentElement.parentElement.firstChild;
+    if(ev2.target.parentElement.innerHTML!="<span>save</span>"){
+   
+   parent.innerText=""
+   ev2.target.parentElement.innerHTML="<span>save</span>";
+   input.focus()}
+      else{
+        const newTxt=input.value;
+        parent.innerText=newTxt;
+        ev2.target.parentElement.innerHTML="<img src='icons/pen-to-square-regular.svg' alt=''>"
+        input.value=""
+        save()
+      }
+   
+   
+  
+  //EX added to update LC status to Delbtn
+    
+    })
+  });
+
+
   Array.from(addev3).forEach((el) => {el.addEventListener('click', function (ev3){
     let parent= ev3.target.parentElement.parentElement.parentElement.parentElement;
     parent.remove();
