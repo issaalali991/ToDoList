@@ -60,57 +60,7 @@ function loadList(){
     save();
   });
       
-     /*  const todoitem=document.createElement('li');
-      todoitem.classList.add('todoitem');
-       const midli=document.createElement('div');
-       midli.classList.add('midli');
-       todoitem.appendChild(midli);
-   
-       const litx=document.createElement('P');
-       litx.classList.add('litx');
-       litx.innerText=item;
-       midli.appendChild(litx);
-   
-       const libuttons=document.createElement('div');
-       libuttons.classList.add('libuttons');
-   // add button 1
-       const editbtn=document.createElement('button');
-       editbtn.classList.add('editbtn');
-       const img1=document.createElement('img');
-       img1.src='/icons/pen-to-square-regular.svg';
-   
-       editbtn.appendChild(img1);
-       libuttons.appendChild(editbtn);
-   // add button 2
-   
-       const delbtn=document.createElement('button');
-       delbtn.classList.add('delbtn');
-       const img2=document.createElement('img');
-       img2.src='/icons/trash-solid.svg';
-   
-       delbtn.appendChild(img2);
-       libuttons.appendChild(delbtn);
-   
-       // add button 3
-       const donebtn=document.createElement('button');
-       donebtn.classList.add('donebtn');
-       donebtn.innerText='Done';
-   
-       
-   
-       
-       libuttons.appendChild(donebtn);
-   
-   
-       midli.appendChild(libuttons);
-   
-       todolist.appendChild(todoitem);
-      input.value=""
-      delbtn.addEventListener('click', () => {
-        todolist.removeChild(todoitem);
-        save();
-      })
-   */
+     
 
 }
 
